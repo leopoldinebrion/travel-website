@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+    background: url('assets/background.jpg');
+    background-size: cover;
+    box-shadow: inset 0 0 0 5000px rgb(0 0 0 / 55%);
+    width: 100%;
+}
+
+header {
+    padding: 41px 43px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 85px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+}
+
+a img {
+    margin-right: 10px;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.title-small {
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 8.4px;
+}
+
+.title-big {
+    font-weight: 700;
+    font-size: 120px;
+    opacity: 70%;
+}
+
+.places {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.places-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    height: 170px;
+    background-color: rgb(255 255 255 / 22%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 2px solid  #484848;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.places-card h2, p, span {
+    color: rgb(255 255 255 / 50%);
+}
+
+.places-card p {
+    font-size: 14px;
+    margin: 8px 0;
+}
