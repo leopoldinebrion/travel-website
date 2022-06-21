@@ -57,6 +57,7 @@ a img {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    animation: fadeInEntrance 2s ease 0s 1 normal forwards;
 }
 
 .title-small {
@@ -102,4 +103,19 @@ a img {
 
 .places-card span {
     font-weight: 600;
+}
+
+
+/* animations */
+
+@keyframes fadeInEntrance {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
