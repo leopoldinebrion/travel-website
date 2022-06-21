@@ -30,6 +30,7 @@ ul {
     display: flex;
     justify-content: space-evenly;
     gap: 85px;
+    cursor: pointer;
 }
 
 a {
@@ -39,6 +40,15 @@ a {
 
 a img {
     margin-right: 10px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 72%;
+    margin-left: 43px;
 }
 
 .main-title {
@@ -88,4 +98,8 @@ a img {
 .places-card p {
     font-size: 14px;
     margin: 8px 0;
+}
+
+.places-card span {
+    font-weight: 600;
 }
