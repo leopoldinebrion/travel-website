@@ -26,14 +26,14 @@ nav {
     font-weight: 600;
 }
 
-ul {
+.desktop-menu {
     display: flex;
     justify-content: space-evenly;
     gap: 85px;
     cursor: pointer;
 }
 
-ul li:hover {
+.desktop-menu li:hover {
     font-weight: 700;
 }
 
@@ -81,7 +81,7 @@ a img {
 .places {
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 3%;
 }
 
 .places-card {
@@ -136,4 +136,26 @@ a img {
 		opacity: 1;
 		transform: scale(1);
 	}
+}
+
+/* responsive */
+
+@media (max-width: 1180px) {
+    .places {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .places-card {
+        width: 50%;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
 }
