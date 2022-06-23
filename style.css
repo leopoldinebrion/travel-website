@@ -33,6 +33,10 @@ ul {
     cursor: pointer;
 }
 
+ul li:hover {
+    font-weight: 700;
+}
+
 a {
     display: flex;
     align-items: center;
@@ -45,10 +49,12 @@ a img {
 .social-media {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     position: absolute;
     top: 72%;
     margin-left: 43px;
+    cursor: pointer;
 }
 
 .main-title {
@@ -74,7 +80,8 @@ a img {
 
 .places {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 5%;
 }
 
 .places-card {
@@ -92,6 +99,16 @@ a img {
     margin-bottom: 20px;
 }
 
+[class*="reveal-"] {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible {
+    animation: fadeInEntrance 1.5s ease 0s 1 normal forwards;
+}
+
+
 .places-card h2, p, span {
     color: rgb(255 255 255 / 50%);
 }
@@ -103,6 +120,7 @@ a img {
 
 .places-card span {
     font-weight: 600;
+    cursor: pointer;
 }
 
 
